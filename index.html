@@ -187,6 +187,82 @@
             font-size: 1.1rem;
         }
 
+        .story-block {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .story-date {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .chat-bubble {
+            background-color: #f0fdfa;
+            border-radius: 12px;
+            padding: 1rem;
+            margin: 1rem 0;
+            position: relative;
+            display: inline-block;
+            max-width: 80%;
+        }
+
+        .chat-bubble::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            border-width: 0 10px 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent #f0fdfa transparent;
+        }
+
+        .story-thought {
+            margin: 1rem 0;
+        }
+
+        .text-muted {
+            color: var(--secondary-color);
+            font-style: italic;
+        }
+
+        .story-result {
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        .gain {
+            color: #16a34a;
+            font-weight: 600;
+        }
+
+        .conclusion-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .conclusion-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .conclusion-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        .story-conclusion {
+            margin-top: 2rem;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1.5rem;
@@ -211,19 +287,46 @@
         <h1>Are You Going to Regret It Again… or Finally Take Action?</h1>
         
         <div class="section">
-            <h2>Remember These Missed Opportunities?</h2>
-            <p>Remember <span class="highlight">Binance Coin (BNB) at $30</span>?<br>
-            Your friend told you: "Buy it now, it's going to explode."</p>
-            <p>But no. Too risky. Already too high.<br>
-            A few months later, BNB hit <span class="price-tag">$600</span><br>
-            You looked at your empty portfolio and kicked yourself.</p>
-            <p>What about <span class="highlight">Solana at $1.50</span>?<br>
-            <span class="price-comparison">Now trading at <span class="price-tag">$178.17</span> (+11,878%)</span><br>
-            <span class="highlight">Avalanche at $4</span>?<br>
-            <span class="price-comparison">Now trading at <span class="price-tag">€23.88</span> (+497%)</span><br>
-            Same story.</p>
-            <div class="highlight-box">
-                <p class="highlight">Today, history is repeating itself, but this time, you have ONE LAST CHANCE to get in before it's too late.</p>
+            <h2>The Story of Missed Fortunes</h2>
+            
+            <div class="story-block">
+                <h3 class="story-date">2020</h3>
+                <p>Your friend messages you about <span class="highlight">Binance Coin (BNB) at $30</span></p>
+                <div class="chat-bubble">
+                    "Trust me, this is going to be huge. Binance is revolutionizing crypto trading."
+                </div>
+                <p class="story-thought">Your thoughts? <span class="text-muted">"Too risky. It's already up so much. I'll wait for a dip..."</span></p>
+                <p class="story-result">Today: BNB peaked at <span class="price-tag">$600</span> — A potential <span class="gain">20x return</span> slipped through your fingers.</p>
+            </div>
+
+            <div class="story-block">
+                <h3 class="story-date">2021</h3>
+                <p>You discover <span class="highlight">Solana at $1.50</span></p>
+                <div class="chat-bubble">
+                    "The fastest blockchain in the world. The Ethereum killer."
+                </div>
+                <p class="story-thought">Your response? <span class="text-muted">"Never heard of it. Better stick to the big names..."</span></p>
+                <p class="story-result">Today: Trading at <span class="price-tag">$178.17</span> — An incredible <span class="gain">+11,878% gain</span> missed.</p>
+            </div>
+
+            <div class="story-block">
+                <h3 class="story-date">2021</h3>
+                <p>You read about <span class="highlight">Avalanche at $4</span></p>
+                <div class="chat-bubble">
+                    "The most scalable smart contract platform. Backed by major institutions."
+                </div>
+                <p class="story-thought">Your decision? <span class="text-muted">"Maybe later, when it's more established..."</span></p>
+                <p class="story-result">Today: Worth <span class="price-tag">€23.88</span> — Another <span class="gain">+497% profit</span> you didn't take.</p>
+            </div>
+
+            <div class="story-conclusion highlight-box">
+                <p><strong>The Pattern is Clear:</strong></p>
+                <ul class="conclusion-list">
+                    <li>Early investors saw the potential and took action</li>
+                    <li>Hesitant investors waited and missed life-changing gains</li>
+                    <li>Each time, the signs were there - but most people waited too long</li>
+                </ul>
+                <p class="highlight">Today, history is repeating itself with $SRA. But this time, you're getting the early access others dream of.</p>
             </div>
         </div>
 
@@ -293,3 +396,4 @@
     </div>
 </body>
 </html>
+
