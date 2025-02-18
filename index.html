@@ -3,151 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorayia - Exclusive Private Sale -50% 🚀</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>$SRA Private Sale - Exclusive 50% Discount Opportunity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #334155;
+            --secondary-color: #64748b;
+            --accent-color: #0f766e;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
+            --border-color: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem 1rem;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+            font-weight: 500;
+        }
+        
+        .highlight {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .highlight-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .important-phase {
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+        
+        .section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: white;
+        }
+        
+        .benefits {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .benefits li {
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: white;
+        }
+        
+        .benefits li::before {
+            content: "✓";
+            margin-right: 0.75rem;
+            color: var(--accent-color);
+        }
+        
+        .warning {
+            background-color: #fef2f2;
+            border: 1px solid #fee2e2;
+            color: #991b1b;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            margin: 2rem 0;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 2rem auto;
+            padding: 1rem 1.5rem;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #115e59;
+        }
+        
+        .price-tag {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+        
+        .verification-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: #f8fafc;
+        }
+
+        .verification-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .verify-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .verify-link:hover {
+            border-color: var(--accent-color);
+        }
+
+        .verify-icon {
+            margin-right: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            h2 {
+                font-size: 1.25rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="main-content">
-            <header>
-                <div class="header-badge">LIMITED OFFER</div>
-                <h1 class="title">
-                    <a href="https://private-sale-coral.vercel.app/">
-                        SORAYIA Exclusive Private Sale<br>
-                        <span class="highlight">50% Discount</span>
-                    </a>
-                </h1>
-                <p class="subtitle">A unique investment opportunity before the official launch</p>
-            </header>
-
-            <main>
-                <div class="timer-card">
-                    <div class="countdown">
-                        <span class="countdown-value">72H</span>
-                        <span class="countdown-label">REMAINING</span>
-                    </div>
-                    <p class="timer-text">This exceptional offer ends in less than 72 hours!</p>
-                </div>
-
-                <div class="value-proposition">
-                    <div class="value-card">
-                        <h2 class="section-title">🎯 Why Invest Now?</h2>
-                        <div class="benefits-grid">
-                            <div class="benefit-item">
-                                <span class="benefit-icon">💎</span>
-                                <h3>Exceptional Price</h3>
-                                <p>Access tokens at 50% off before official launch</p>
-                            </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">📈</span>
-                                <h3>Growth Potential</h3>
-                                <p>Position yourself before market rise</p>
-                            </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">🔒</span>
-                                <h3>Limited Supply</h3>
-                                <p>Restricted allocation, first come, first served</p>
-                            </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">🎁</span>
-                                <h3>Exclusive Bonuses</h3>
-                                <p>Priority access to future opportunities</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="price-section">
-                    <div class="price-card">
-                        <div class="price-header highlight">
-                            <h3>Minimum Buy</h3>
-                            <div class="price-value">0.1 BNB</div>
-                            <p class="price-note">Maximum Buy 5 BNB</p>
-                        </div>
-                        <div class="price-cta">
-                            <a href="https://private-sale-coral.vercel.app/" class="cta-button pulse">
-                                SECURE MY TOKENS NOW 🚀
-                            </a>
-                            <p class="security-note">✅ Verified & Audited Smart Contract</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="trust-section">
-                    <div class="verification-card">
-                        <h3>🔒 Guaranteed Security</h3>
-                        <div class="verification-items">
-                            <div class="verification-item">
-                                <span class="check-icon">✓</span>
-                                <div>
-                                    <strong>Verified Smart Contract</strong>
-                                    <a href="https://bscscan.com/address/0xaA5B9f8Cea06543c194A93f209049901Ee569d57" class="contract-link">
-                                        View on BSCScan →
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="verification-item">
-                                <span class="check-icon">✓</span>
-                                <div>
-                                    <strong>Token Listed on GeckoTerminal</strong>
-                                    <a href="https://www.geckoterminal.com/fr?q=0x424516fBe635c5642723AB6c1b413fF61B177dd6" class="contract-link">
-                                        View Token →
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="alert-banner">
-                    <div class="alert-content">
-                        <span class="alert-icon">⚡️</span>
-                        <p><strong>ATTENTION:</strong> Over 60% of tokens already reserved</p>
-                    </div>
-                </div>
-
-                <div class="community-section">
-                    <h3>Join the Sorayia Community</h3>
-                    <p class="community-subtitle">Stay informed about latest news and opportunities</p>
-                    <div class="social-links">
-                        <a href="https://t.me/sorayiadotom" class="social-button telegram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-                            </svg>
-                            Join Telegram
-                        </a>
-                        <a href="https://x.com/sorayiadotcom" class="social-button twitter">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-                            </svg>
-                            Follow on X
-                        </a>
-                    </div>
-                </div>
-
-                <div class="vip-section">
-                    <div class="vip-card">
-                        <h3>🎁 VIP Access to Future Opportunities</h3>
-                        <p>Be the first to know about upcoming private sales and exclusive opportunities</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeW-ir7JInnFDwxhjucVyxmBjU8OmMWtHxWJH2PvGoUcULA4Q/viewform?usp=header" class="vip-button">
-                            Join VIP List →
-                        </a>
-                    </div>
-                </div>
-            </main>
-
-            <footer>
-                <p> 2025 Sorayia.com - All rights reserved</p>
-                <div class="footer-links">
-                    <a href="#">Terms & Conditions</a>
-                    <span>•</span>
-                    <a href="#">Privacy Policy</a>
-                    <span>•</span>
-                    <a href="#">Contact</a>
-                </div>
-            </footer>
+        <h1>Are You Going to Regret It Again… or Finally Take Action?</h1>
+        
+        <div class="section">
+            <h2>Remember These Missed Opportunities?</h2>
+            <p>Remember <span class="highlight">Binance Coin (BNB) at $30</span>?<br>
+            Your friend told you: "Buy it now, it's going to explode."</p>
+            <p>But no. Too risky. Already too high.<br>
+            A few months later, BNB hit <span class="price-tag">$600</span><br>
+            You looked at your empty portfolio and kicked yourself.</p>
+            <p>What about <span class="highlight">Solana at $1.50</span>?<br>
+            <span class="highlight">Avalanche at $4</span>?<br>
+            Same story.</p>
+            <p>While insiders and whales were buying early, you were watching from the sidelines.</p>
+            <div class="highlight-box">
+                <p class="highlight">Today, history is repeating itself, but this time, you have ONE LAST CHANCE to get in before it's too late.</p>
+            </div>
         </div>
+
+        <a href="https://private-sale-coral.vercel.app/" class="cta-button">Don't Miss Out - Join Now</a>
+
+        <div class="section">
+            <h2>This Time, You Have a Reserved Spot</h2>
+            <p>No empty promises. No fake ICO selling you a dream.</p>
+            <div class="highlight-box">
+                <p class="highlight">$SRA is ALREADY LISTED on DEX.</p>
+                <p><span class="important-phase">Current Phase: Private Sale with 50% Discount</span></p>
+            </div>
+            
+            <div class="benefits">
+                <li>The market is already buying, but YOU get a special advantage.</li>
+                <li>An EXCLUSIVE discount: <span class="price-tag">-50% OFF</span> the current price.</li>
+                <li>Liquidity and marketing are being boosted to accelerate growth.</li>
+            </div>
+            
+            <h3>Why You Need to Act NOW?</h3>
+            <ul class="benefits">
+                <li><span class="important-phase">REAL Opportunity</span> → Not just hype, $SRA is already trading.</li>
+                <li><span class="important-phase">VIP Price</span> → -50% during the private sale.</li>
+                <li><span class="important-phase">Growing Momentum</span> → More buyers, more volume, more pump.</li>
+                <li><span class="important-phase">Scaling Fast</span> → Strengthened liquidity, aggressive marketing, growing adoption.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="highlight-box">
+                <p class="highlight">Once the private sale closes, that's it. Those who got in early will have bought BEFORE the explosion.</p>
+            </div>
+            
+            <h3>You've Missed Opportunities Before… Are You Going to Let This One Slip Away Too?</h3>
+            <ul class="benefits">
+                <li>Big investors buy low – you always buy when it's too late.</li>
+                <li>They get exclusive early deals – you have to fight in the public market.</li>
+                <li>They get discounted prices – you end up chasing the pumps.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p class="highlight">This time, YOU'RE INVITED to the big leagues.</p>
+                <p class="highlight">You can take your share BEFORE the market eats it up.</p>
+            </div>
+        </div>
+
+        <div class="warning">
+            <p>This offer is ultra-limited. Spots are filling up fast, and once it's gone, it's gone forever.</p>
+            <p>Last chance. Reserve your allocation NOW.</p>
+        </div>
+
+        <div class="verification-section">
+            <h3>Verify Smart Contract & Token</h3>
+            <div class="verification-links">
+                <a href="https://bscscan.com/address/0xaA5B9f8Cea06543c194A93f209049901Ee569d57" target="_blank" class="verify-link">
+                    <span class="verify-icon">🔍</span>
+                    View Private Sale Contract on BSCScan
+                </a>
+                <a href="https://www.geckoterminal.com/fr?q=0x424516fBe635c5642723AB6c1b413fF61B177dd6" target="_blank" class="verify-link">
+                    <span class="verify-icon">📊</span>
+                    View Token on Gecko Terminal
+                </a>
+            </div>
+        </div>
+
+        <a href="https://private-sale-coral.vercel.app/" class="cta-button">Reserve Your Allocation NOW</a>
     </div>
 </body>
 </html>
